@@ -1167,9 +1167,23 @@ let lastShake=0;
 if(window.DeviceMotionEvent){window.addEventListener('devicemotion',e=>{const a=e.accelerationIncludingGravity;if(!a)return;const power=Math.abs(a.x)+Math.abs(a.y)+Math.abs(a.z);const now=Date.now();if(power>35&&now-lastShake>3000){lastShake=now;for(let i=0;i<40;i++)setTimeout(spawnParticle,i*40);for(let i=0;i<20;i++)setTimeout(spawnPetal,i*50);for(let i=0;i<12;i++)setTimeout(()=>spawnFirework(Math.random()*innerWidth,Math.random()*innerHeight),i*80);const msg=document.createElement('div');msg.style.cssText='position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:500;background:rgba(20,0,40,0.94);border:1px solid rgba(255,133,161,0.5);border-radius:28px;padding:24px 34px;text-align:center;font-family:Quicksand,sans-serif;font-size:1.1rem;color:#ffc2d4;box-shadow:0 20px 60px rgba(255,77,126,0.4);';msg.innerHTML='<div style="font-size:2.5rem;margin-bottom:10px;">🎊💖🎊</div><div style="font-weight:700;font-size:1.2rem;color:#ffd700;margin-bottom:8px;">Surprise! 🥳</div><div>Phone shake pannitaaye!<br>I love you so much! 💖</div>';document.body.appendChild(msg);setTimeout(()=>msg.remove(),3500);}});}
 
 // ═══ INIT ═══
-window.addEventListener('DOMContentLoaded',()=>{buildMemoryCards();initWordSearch();initHOL();initCandles();initQuiz();initStarRatings();revealFortune();showEmojiStory(0);});
+window.addEventListener('DOMContentLoaded',()=>{buildMemoryCards();initWordSearch();initHOL();initCandles();initQuiz();initStarRatings();revealFortune();showEmojiStory(0);}); 
+
+  
 </script>
 </body>
 </html>
 HTMLEOF
 echo "Done! $(wc -c < /home/claude/dharshu_v2.html) bytes"
+
+
+
+
+
+
+
+
+
+
+
+  
